@@ -10,7 +10,19 @@
 		435D635C23754C37004286B8 /* Spruce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435D635B23754C36004286B8 /* Spruce.framework */; };
 		435EEA32237179FC0077CF54 /* AnjayFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 435EEA30237179FC0077CF54 /* AnjayFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		435EEA3923717A710077CF54 /* Anjay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435EEA3823717A710077CF54 /* Anjay.swift */; };
+		4399AD6423824DB40090F9E9 /* AnjayFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4399AD6323824DB40090F9E9 /* AnjayFrameworkTests.swift */; };
+		4399AD6623824DB40090F9E9 /* AnjayFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435EEA2D237179FC0077CF54 /* AnjayFramework.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4399AD6723824DB40090F9E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 435EEA24237179FC0077CF54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 435EEA2C237179FC0077CF54;
+			remoteInfo = AnjayFramework;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		435D635B23754C36004286B8 /* Spruce.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spruce.framework; path = Carthage/Build/iOS/Spruce.framework; sourceTree = "<group>"; };
@@ -18,6 +30,9 @@
 		435EEA30237179FC0077CF54 /* AnjayFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnjayFramework.h; sourceTree = "<group>"; };
 		435EEA31237179FC0077CF54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		435EEA3823717A710077CF54 /* Anjay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anjay.swift; sourceTree = "<group>"; };
+		4399AD6123824DB40090F9E9 /* AnjayFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnjayFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4399AD6323824DB40090F9E9 /* AnjayFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnjayFrameworkTests.swift; sourceTree = "<group>"; };
+		4399AD6523824DB40090F9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				435D635C23754C37004286B8 /* Spruce.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4399AD5E23824DB40090F9E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4399AD6623824DB40090F9E9 /* AnjayFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				435EEA2F237179FC0077CF54 /* AnjayFramework */,
+				4399AD6223824DB40090F9E9 /* AnjayFrameworkTests */,
 				435EEA2E237179FC0077CF54 /* Products */,
 				435D635A23754C36004286B8 /* Frameworks */,
 			);
@@ -53,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				435EEA2D237179FC0077CF54 /* AnjayFramework.framework */,
+				4399AD6123824DB40090F9E9 /* AnjayFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +90,15 @@
 				435EEA3823717A710077CF54 /* Anjay.swift */,
 			);
 			path = AnjayFramework;
+			sourceTree = "<group>";
+		};
+		4399AD6223824DB40090F9E9 /* AnjayFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				4399AD6323824DB40090F9E9 /* AnjayFrameworkTests.swift */,
+				4399AD6523824DB40090F9E9 /* Info.plist */,
+			);
+			path = AnjayFrameworkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,18 +134,40 @@
 			productReference = 435EEA2D237179FC0077CF54 /* AnjayFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		4399AD6023824DB40090F9E9 /* AnjayFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4399AD6B23824DB40090F9E9 /* Build configuration list for PBXNativeTarget "AnjayFrameworkTests" */;
+			buildPhases = (
+				4399AD5D23824DB40090F9E9 /* Sources */,
+				4399AD5E23824DB40090F9E9 /* Frameworks */,
+				4399AD5F23824DB40090F9E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4399AD6823824DB40090F9E9 /* PBXTargetDependency */,
+			);
+			name = AnjayFrameworkTests;
+			productName = AnjayFrameworkTests;
+			productReference = 4399AD6123824DB40090F9E9 /* AnjayFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		435EEA24237179FC0077CF54 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Krisnandika Aji";
 				TargetAttributes = {
 					435EEA2C237179FC0077CF54 = {
 						CreatedOnToolsVersion = 11.1;
 						LastSwiftMigration = 1110;
+					};
+					4399AD6023824DB40090F9E9 = {
+						CreatedOnToolsVersion = 11.1;
 					};
 				};
 			};
@@ -129,12 +185,20 @@
 			projectRoot = "";
 			targets = (
 				435EEA2C237179FC0077CF54 /* AnjayFramework */,
+				4399AD6023824DB40090F9E9 /* AnjayFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		435EEA2B237179FC0077CF54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4399AD5F23824DB40090F9E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -175,7 +239,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4399AD5D23824DB40090F9E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4399AD6423824DB40090F9E9 /* AnjayFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4399AD6823824DB40090F9E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 435EEA2C237179FC0077CF54 /* AnjayFramework */;
+			targetProxy = 4399AD6723824DB40090F9E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		435EEA33237179FC0077CF54 /* Debug */ = {
@@ -361,6 +441,42 @@
 			};
 			name = Release;
 		};
+		4399AD6923824DB40090F9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z89RD4GLMJ;
+				INFOPLIST_FILE = AnjayFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anjay.AnjayFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4399AD6A23824DB40090F9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z89RD4GLMJ;
+				INFOPLIST_FILE = AnjayFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anjay.AnjayFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -378,6 +494,15 @@
 			buildConfigurations = (
 				435EEA36237179FC0077CF54 /* Debug */,
 				435EEA37237179FC0077CF54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4399AD6B23824DB40090F9E9 /* Build configuration list for PBXNativeTarget "AnjayFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4399AD6923824DB40090F9E9 /* Debug */,
+				4399AD6A23824DB40090F9E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

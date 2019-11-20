@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 public class Anjay: NSObject {
+    var power: Int = 80
     
     public func mabar() {
         NSLog("You have anjayed your last mabar.")
@@ -17,6 +18,7 @@ public class Anjay: NSObject {
 }
 
 public class Salam: NSObject {
+    var power: Int = 70
     
     public func booyah() {
         NSLog("You have salamed your last booyah.")
@@ -24,6 +26,7 @@ public class Salam: NSObject {
 }
 
 public class Kuat: NSObject {
+    var power: Int = 50
     
     public func edan() {
         NSLog("You have kuated your last edan.")
@@ -31,6 +34,7 @@ public class Kuat: NSObject {
 }
 
 public class Edan: NSObject {
+    var power: Int = 25
     
     public func kitu() {
         NSLog("You have edaned your last kitu.")
